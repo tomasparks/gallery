@@ -1,0 +1,24 @@
+├── inspiration
+│   ├── retro
+│   │   ├── airplane
+│   │   ├── atomic
+│   │   │   ├── bomb
+│   │   │   └── nuke
+│   │   ├── car
+│   │   ├── city
+│   │   ├── clock
+│   │   ├── computer
+│   │   │   └── terminal
+│   │   ├── rocket
+│   │   ├── space
+│   │   │   ├── moon
+│   │   │   ├── planet
+│   │   │   ├── rocket
+│   │   │   │   └─ moon
+│   │   ├── tv
+│   │   ├── underwater
+│   │   └── unsorted
+│   │       ├── 70s scifi art
+│   │       └── the vault of the atomic space age
+│   ├── steampunk
+│   │   └── unsorted

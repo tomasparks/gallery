@@ -1,0 +1,36 @@
+{
+    id: inspiration,
+    name: inspiration
+    {
+        id: retro,
+        name: retro,
+        {
+            id: unsorted,
+            name: unsorted,
+            {
+                id: "70sScifiArt",
+                name: "70s scifi art"
+            },
+            {
+                id: "TheVaultOfTheAtomicSpaceAge",
+                name: "the vault of the atomic space age"
+            }
+        },
+        {
+            id: underwater,
+            name: underwater
+        }
+    },
+    {
+        id: steampunk,
+        name: steampunk
+    }
+},
+{
+    id: photos,
+    name: photos,
+    {
+        id: family,
+        name: family
+    }
+}

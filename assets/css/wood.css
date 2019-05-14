@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://fonts.googleapis.com/css?family=La+Belle+Aurore);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.no-js img.lazyload {
+  display: none; }
+
+.blur-up {
+  filter: blur(10px);
+  transition: filter 400ms; }
+
+.blur-up.lazyloaded {
+  filter: blur(0); }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 400ms; }
+
+.fade-in.lazyloaded {
+  opacity: 1; }
+
+body {
+  background-image: url("/gallery/assets/images/wood.jpg");
+  font-family: "La Belle Aurore", cursive;
+  font-size: 25px;
+  /*
+      .h-feed {
+          .p-name {margin: 10px;background-color: white;border: 1px solid black;border-top-left-radius: 25px;border-top-right-radius: 25px;border-bottom-left-radius: 25px;border-bottom-right-radius: 25px; width: auto;padding: 10px;}
+          .h-entry {
+              .p-name {border: 0px;}
+              .p-summary {font-family: $gobal-font;box-shadow: 0px 0px 1px rgba(0,0,0,0.5);word-wrap: 0;overflow: auto;line-height: 25px;padding: 2px 8px;margin-bottom: 10px;background: linear-gradient(to bottom, #e6ffe6 50%, #FFFFFF 50%);background-size: 50px 50px;}
+              .p-author {text-align: right;}
+          }
+      }
+  */ }
+  body .h-entry {
+    margin: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: auto;
+    padding: 10px; }
+    body .h-entry .p-name {
+      text-align: center; }
+    body .h-entry .p-content {
+      color: black;
+      margin: 10px;
+      border: 1px solid black;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: auto;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px; }
+    body .h-entry .album-contents .sub-albums {
+      color: black;
+      margin: 10px;
+      border: 1px solid black;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: auto;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px; }
+    body .h-entry .album-contents .album-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 30px;
+      text-decoration: none; }
+      body .h-entry .album-contents .album-images a:link {
+        text-decoration: none;
+        color: black; }
+      body .h-entry .album-contents .album-images a {
+        text-decoration: none;
+        color: black; }
+        body .h-entry .album-contents .album-images a .h-entry {
+          text-decoration: none;
+          color: black;
+          margin: 10px;
+          border: 1px solid black;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          width: auto;
+          padding: 10px;
+          background-color: white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          margin-bottom: 25px;
+          text-decoration: none;
+          color: black; }
+          body .h-entry .album-contents .album-images a .h-entry .u-photo {
+            width: 100%; }
+          body .h-entry .album-contents .album-images a .h-entry .p-content {
+            font-style: normal;
+            text-align: center;
+            padding: 10px; }
+          body .h-entry .album-contents .album-images a .h-entry .metadata {
+            background-color: lightcyan;
+            margin: 10px; }
+    body .h-entry .album-contents .tag-cloud {
+      color: black;
+      margin: 10px;
+      border: 1px solid black;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: auto;
+      padding: 10px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      text-decoration: none;
+      color: black; }
+  body .album-footer {
+    color: black;
+    margin: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: black; }
+  body .image-footer {
+    color: black;
+    margin: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: black; }
+  body .footer {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: center;
+    bottom: 0px;
+    width: auto;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0px; }
